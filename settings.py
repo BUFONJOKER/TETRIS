@@ -1,6 +1,6 @@
 import pygame
 
-#Game size
+#GAMESIZE
 
 columns = 10
 rows = 20
