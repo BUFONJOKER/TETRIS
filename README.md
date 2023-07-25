@@ -27,10 +27,10 @@ python3 main.py
 * [Python](https://www.python.org)
 * [Pygame](https://www.pygame.org/wiki/GettingStarted), an open source Python library for making multimedia applications
 
-## Authors
+## Author
 
-* **ARJ** - *Initial work*
+* **ARJ**
 
-See also the list of [contributors](https://github.com/rajatdiptabiswas/tetris-pygame/graphs/contributors) who participated in this project.
+
 
 
