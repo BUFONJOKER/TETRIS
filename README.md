@@ -25,13 +25,32 @@ When a complete line is formed, it disappears, and the player earns points. As t
 - Speed increment as the game progresses, making it more difficult over time.
 - Sound effects for actions like completing lines or dropping tetrominoes.
 
+
+
 ## Installation
+Download the Python 3 installer package from the official website and install it, if not installed previously.
 
-To play the Tetris game using Pygame, follow these steps:
+Run the following in the terminal to install the Pygame library
+```
+pip install pygame-ce
+```
 
-1. Install Python on your computer (if not already installed): https://www.python.org/downloads/
-2. Open the terminal or command prompt and run the following command to install Pygame:
 
+Another alternative would be to import the contents of the repository in a PyCharm project.
+The Pygame library can be installed in a virtual environment of PyCharm using the steps mentioned [here](https://www.jetbrains.com/help/pycharm/installing-uninstalling-and-upgrading-packages.html).
+
+
+## Running the application
+Download the source code from the repository and run the file just as any other Python script (.py) file.
+```
+python3 main.py
+```
+
+
+
+## Prerequisites
+* [Python](https://www.python.org)
+* [Pygame](https://www.pygame.org/wiki/GettingStarted), an open source Python library for making multimedia applications
 
 ## Author
 
