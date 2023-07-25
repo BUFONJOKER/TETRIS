@@ -1,0 +1,21 @@
+# Ignore compiled Python files
+*.pyc
+# include pycache file
+__pycache__/
+
+# Ignore operating system and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Ignore distribution build folders
+build/
+dist/
+*.exe
+
+# Ignore temporary files and logs
+*.log
+*.tmp
+
+# Ignore virtual environment folder (if using virtualenv)
+venv/
