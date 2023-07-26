@@ -19,3 +19,5 @@ class Game:
         # add padding at lower end
     
         self.display_surface.blit(self.surface, (padding,padding))
+        # change the color of the surface
+        self.surface.fill((white))
