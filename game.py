@@ -16,5 +16,6 @@ class Game:
     def run(self):
 
         # draw the surface
-        self.display_surface.blit(self.surface,(padding,padding))
-
+        # add padding at lower end
+    
+        self.display_surface.blit(self.surface, (padding,padding))

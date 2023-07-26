@@ -14,7 +14,7 @@ class Main:
         pygame.init()
 
         # set the display window
-        self.display = pygame.display.set_mode((640,480))
+        self.display = pygame.display.set_mode((window_width,window_height))
 
         # set the clock
         self.clock = pygame.time.Clock()
