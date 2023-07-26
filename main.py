@@ -4,6 +4,9 @@ from sys import exit
 #from game file import the game class
 from game import Game
 
+# from score file import the score class
+from score import Score
+
 # create a class for the main game
 class Main:
 
@@ -24,6 +27,7 @@ class Main:
 
         #components
         self.game = Game()
+        self.score = Score()
     
     # function run the game
     def run(self):
@@ -48,6 +52,9 @@ class Main:
 
             # run the game
             self.game.run()
+
+            # run the score
+            self.score.run()
             
             # Update the game
             pygame.display.update()
