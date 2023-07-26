@@ -1,6 +1,9 @@
 from settings import *
 from sys import exit
 
+#from game file import the game class
+from game import Game
+
 # create a class for the main game
 class Main:
 
@@ -18,6 +21,9 @@ class Main:
         
         # set the title of the window
         pygame.display.set_caption("Tetris")
+
+        #components
+        self.game = Game()
     
     # function run the game
     def run(self):
@@ -39,6 +45,9 @@ class Main:
             
             # fill screen with grey color
             self.display.fill((grey))
+
+            # run the game
+            self.game.run()
             
             # Update the game
             pygame.display.update()
