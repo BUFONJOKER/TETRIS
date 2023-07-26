@@ -7,6 +7,9 @@ from game import Game
 # from score file import the score class
 from score import Score
 
+# from preview file import the preview class
+from preview import Preview
+
 # create a class for the main game
 class Main:
 
@@ -28,6 +31,7 @@ class Main:
         #components
         self.game = Game()
         self.score = Score()
+        self.preview = Preview()
     
     # function run the game
     def run(self):
@@ -55,6 +59,9 @@ class Main:
 
             # run the score
             self.score.run()
+
+            # run the preview
+            self.preview.run()
             
             # Update the game
             pygame.display.update()
