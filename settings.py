@@ -9,7 +9,7 @@ game_width,game_height = columns * cell_size, rows * cell_size
 
 #sidebar size
 
-sidebar_width = 200
+sidebar_width = 100
 preview_height_fraction = 0.7
 score_height_fraction = 1 - preview_height_fraction
 
