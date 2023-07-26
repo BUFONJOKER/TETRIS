@@ -22,3 +22,6 @@ class Score:
         self.display_surface.blit(
             self.surface, (game_width + 2 * padding, 
                            padding + preview_height_fraction * game_height))
+
+        # change the color of the surface
+        self.surface.fill((blue))
