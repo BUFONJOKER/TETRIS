@@ -1,7 +1,9 @@
 from settings import *
 
+# create a class for the preview
 class Preview:
 
+    # init function to initialize the preview
     def __init__(self):
 
         # set the surface
@@ -11,6 +13,7 @@ class Preview:
         # set the display surface
         self.display_surface = pygame.display.get_surface()
 
+    # function to run the preview
     def run(self):
 
         # draw the surface
