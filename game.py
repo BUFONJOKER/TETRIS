@@ -15,6 +15,6 @@ class Game:
     # function to run the game
     def run(self):
 
-        # fill the surface with black color
+        # draw the surface
         self.display_surface.blit(self.surface,(padding,padding))
 
