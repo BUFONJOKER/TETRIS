@@ -12,6 +12,10 @@ class Game:
         # set the display surface   
         self.display_surface = pygame.display.get_surface()
 
+        # add reactangle to the surface
+        self.rect = self.surface.get_rect(topleft = (padding,padding))
+
+
         # line surface with default black color
         self.line_surface = self.surface.copy()
 
@@ -65,7 +69,10 @@ class Game:
 
         # draw the surface
         # add padding at lower end
-    
         self.display_surface.blit(self.surface, (padding,padding))
+
         # change the color of the surface
         self.surface.fill((grey))
+
+        # draw the rectangle
+        pygame.draw.rect(self.display_surface,line_color,self.rect,1,1)
