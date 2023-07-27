@@ -25,6 +25,16 @@ class Game:
             # draw the line
             pygame.draw.line(self.surface,line_color,
                              (x,0),(x,self.surface.get_height()),1)
+            
+        # loop through the rows
+        for row in range(1,rows):
+                
+                # calculate the y coordinate
+                y = row * cell_size
+    
+                # draw the line
+                pygame.draw.line(self.surface,line_color,
+                                (0,y),(self.surface.get_width(),y),1)
 
     # function to run the game
     def run(self):
