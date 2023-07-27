@@ -12,8 +12,25 @@ class Game:
         # set the display surface   
         self.display_surface = pygame.display.get_surface()
 
+
+    # function to draw the grid on top of game surface
+    def draw_grid(self):
+
+        # loop through the columns
+        for col in range(1,columns):
+
+            # calculate the x coordinate
+            x = col * cell_size
+
+            # draw the line
+            pygame.draw.line(self.surface,line_color,
+                             (x,0),(x,self.surface.get_height()),1)
+
     # function to run the game
     def run(self):
+
+        # draw the grid
+        self.draw_grid()
 
         # draw the surface
         # add padding at lower end
