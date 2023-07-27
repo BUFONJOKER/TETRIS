@@ -12,9 +12,7 @@ class Game:
         # set the display surface   
         self.display_surface = pygame.display.get_surface()
 
-        # line surface with white color
-        
-        
+        # line surface with default black color
         self.line_surface = self.surface.copy()
        
 
