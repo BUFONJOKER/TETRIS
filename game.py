@@ -14,6 +14,12 @@ class Game:
 
         # line surface with default black color
         self.line_surface = self.surface.copy()
+
+        # fill line surface with yellow color
+        self.line_surface.fill((yellow))
+
+        # set the color key not used anywhere
+        self.line_surface.set_colorkey((yellow))
        
 
 
@@ -43,6 +49,8 @@ class Game:
         # draw the line surface on the game surface
         self.surface.blit(self.line_surface,(0,0))
 
+        
+
     # function to run the game
     def run(self):
 
@@ -54,4 +62,4 @@ class Game:
     
         self.display_surface.blit(self.surface, (padding,padding))
         # change the color of the surface
-        self.surface.fill((white))
+        self.surface.fill((grey))
