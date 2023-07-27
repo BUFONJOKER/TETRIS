@@ -20,6 +20,12 @@ class Game:
 
         # set the color key not used anywhere
         self.line_surface.set_colorkey((yellow))
+
+        # alpha value which is used for tranparency
+        # on line surface
+        # 0 means fully transparent
+        # 255 means fully opaque
+        self.line_surface.set_alpha(100)
        
 
 
