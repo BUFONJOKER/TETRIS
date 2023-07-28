@@ -6,6 +6,7 @@ class Game:
     # init function to initialize the game
     def __init__(self):
 
+        #           GENERAL
         # set the surface
         self.surface = pygame.Surface((game_width,game_height))
         
@@ -15,7 +16,13 @@ class Game:
         # add reactangle to the surface
         self.rect = self.surface.get_rect(topleft = (padding,padding))
 
+        #           BLOCKS
+        # create a group for the blocks
+        self.blocks = pygame.sprite.Group()
 
+        #
+
+        #           LINES
         # line surface with default black color
         self.line_surface = self.surface.copy()
 
@@ -30,6 +37,9 @@ class Game:
         # 0 means fully transparent
         # 255 means fully opaque
         self.line_surface.set_alpha(100)
+
+        # test block
+        self.block = Block(self.blocks, pygame.Vector2(1,1),yellow)
        
 
 
@@ -67,6 +77,9 @@ class Game:
         # draw the grid
         self.draw_grid()
 
+        # draw blocks
+        self.blocks.draw(self.surface)
+
         # draw the surface
         # add padding at lower end
         self.display_surface.blit(self.surface, (padding,padding))
@@ -76,3 +89,32 @@ class Game:
 
         # draw the rectangle
         pygame.draw.rect(self.display_surface,line_color,self.rect,1,1)
+
+# create a class for the blocks
+class Block(pygame.sprite.Sprite):
+     
+    # init function to initialize the block
+     def __init__(self, blocks, position, color):
+
+        # call the parent class constructor
+        super().__init__(blocks)
+
+        # set the image
+        self.image = pygame.Surface((cell_size,cell_size))
+
+        # fill the image with yellow color
+        self.image.fill((color))
+
+        # position of the block
+        self.position = position
+        x = position.x * cell_size
+        y = position.y * cell_size
+
+
+        # draw the rectangle
+        self.rect = self.image.get_rect(topleft = (x,y))
+
+
+class Tetromino:
+     def __init__(self,shape,group):
+          self.block_positions = []

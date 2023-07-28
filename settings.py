@@ -4,7 +4,7 @@ import pygame
 
 columns = 10
 rows = 20
-cell_size = 20
+cell_size = 30
 game_width,game_height = columns * cell_size, rows * cell_size
 
 #sidebar size
@@ -15,7 +15,7 @@ score_height_fraction = 1 - preview_height_fraction
 
 #window
 
-padding = 10
+padding = 20
 window_width = game_width + sidebar_width + padding * 3
 window_height = game_height + padding * 2
 
