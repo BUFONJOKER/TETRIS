@@ -10,6 +10,8 @@ from score import Score
 # from preview file import the preview class
 from preview import Preview
 
+
+
 # create a class for the main game
 class Main:
 

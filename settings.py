@@ -24,7 +24,7 @@ window_height = game_height + padding * 2
 update_start_speed = 800
 move_wait_time = 200
 rotate_wait_time = 200
-block_offset = pygame.Vector2(columns // 2,-1)
+block_offset = pygame.Vector2(columns // 2,8)
 
 #colors
 
