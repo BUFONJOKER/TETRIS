@@ -3,6 +3,9 @@
 # include pycache file
 __pycache__/
 
+# include .vscode folder
+.vs/
+
 # Ignore operating system and IDE files
 .DS_Store
 Thumbs.db
